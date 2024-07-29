@@ -1,4 +1,6 @@
-body{
+html, body{
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", sans-serif;
 }
 .hero, .footer {
@@ -47,4 +49,18 @@ ul {
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
+  }
+
+  .img-info {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882F6; 
+    border-radius: 10px;
+  }
+  
+  .img-hero {
+    max-width: 580px;
+    max-height: 240px;
+    width: 100%;
+    height: auto;
   }
