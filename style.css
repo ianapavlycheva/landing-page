@@ -22,8 +22,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  display: flex;
-  align-items: center;
   padding-top: 80px;
 }
 
@@ -38,8 +36,6 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  display: flex;
   align-items: center;
 }
 
@@ -98,14 +94,14 @@ ul {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.btn-header,
-btn-action:hover {
+.btn-header:hover,
+.btn-action:hover {
   background-color: #0056b3;
   transform: scale(1.05);
 }
 
-.btn-header,
-btn-action:active {
+.btn-header:active,
+.btn-action:active {
   background-color: #004085;
   transform: scale(1);
 }
@@ -177,8 +173,7 @@ btn-action:active {
   padding: 6px 30px;
   margin-top: 10px;
   font-size: 18px;
-  border-style: solid;
-  border-color: #e5e7eb;
+  border: solid 1px #e5e7eb;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
@@ -189,7 +184,8 @@ btn-action:active {
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
+  text-align: center;
 }
