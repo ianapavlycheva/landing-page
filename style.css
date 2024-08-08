@@ -86,7 +86,7 @@ ul {
 }
 
 .btn-header,
-.action {
+.btn-action {
   background-color: #3882f6;
   color: #e5e7eb;
   padding: 6px 30px;
@@ -98,12 +98,14 @@ ul {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.btn-header:hover {
+.btn-header,
+btn-action:hover {
   background-color: #0056b3;
   transform: scale(1.05);
 }
 
-.btn-header:active {
+.btn-header,
+btn-action:active {
   background-color: #004085;
   transform: scale(1);
 }
@@ -144,6 +146,42 @@ ul {
   height: 150px;
   border: 4px solid #3882f6;
   border-radius: 10px;
+}
+
+.cta-container {
+  background-color: #3882f6;
+  color: #e5e7eb;
+  border-radius: 8px;
+  margin: 100px 180px;
+  padding: 30px 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-title {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.btn-action {
+  background-color: #3882f6;
+  color: #e5e7eb;
+  padding: 6px 30px;
+  margin-top: 10px;
+  font-size: 18px;
+  border-style: solid;
+  border-color: #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .footer {
