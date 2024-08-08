@@ -3,13 +3,45 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
 body{
     font-family: "Roboto", sans-serif;
 }
+
 .hero, .footer {
     background-color: #1F2937;
-
 }
+
+.hero{
+  padding: 10px 150px;
+  height: 430px;
+}
+
+.hero-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;;
+}
+
+.hero-content{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+
 
 h1{
     font-size: 48px;
@@ -19,12 +51,13 @@ h1{
 
 .logo {
     font-size: 24px;
+    font-weight: extra bold;
     color: #F9FAF8;
 }
 
-.hero-paragraph, .a, .footer{
+.hero-paragraph, a, .footer{
     font-size: 18px;
-    color: #E5E7EB;
+    color: rgba(229, 231, 235, 0.7);
 }
 
 a{
@@ -32,18 +65,36 @@ a{
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+    display: flex;
+    gap: 16px;
+    list-style: none;
   }
   
-  li {
-    margin-bottom: 16px;
-  }
+
 
   .btn-header, .action{
     background-color: #3882F6;
+    color: #E5E7EB;
+    padding: 6px 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  
   }
+  
+.btn-header:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-header:active {
+    background-color: #004085;
+    transform: scale(1);
+}
 
   .quote {
     background-color: #E5E7EB;
