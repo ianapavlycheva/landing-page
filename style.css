@@ -112,14 +112,21 @@ ul {
   margin: 30px 300px 110px 300px;
 }
 
-.quote {
+.quote-section {
   background-color: #e5e7eb;
+  padding: 90px 300px;
 }
 
 .quote-text {
   font-size: 36px;
   font-style: italic;
-  color: #1f2937;
+  font-weight: 300;
+  color: rgba(31, 41, 55, 0.8);
+}
+
+.quote-autor {
+  font-weight: 800;
+  text-align: right;
 }
 
 .pics {
