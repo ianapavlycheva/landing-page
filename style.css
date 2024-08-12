@@ -27,10 +27,10 @@ body {
 
 .hero-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: column;
-  margin-left: 90px;
+  align-items: flex-start;
+  margin-left: 0;
+  text-align: left;
 }
 
 .header {
@@ -41,13 +41,13 @@ body {
 
 h1 {
   font-size: 48px;
-  font-weight: extra bold;
+  font-weight: 900;
   color: #f9faf8;
 }
 
 .logo {
   font-size: 24px;
-  font-weight: extra bold;
+  font-weight: 900;
   color: #f9faf8;
 }
 
@@ -56,10 +56,16 @@ h1 {
   max-height: 240px;
   width: 100%;
   height: auto;
+  margin-left: 30px;
 }
+
+.img-text {
+  color: rgba(31, 41, 55, 0.7);
+}
+
 h3 {
   font-size: 36px;
-  font-weight: extra bold;
+  font-weight: 900;
   padding: 30px;
   text-align: center;
 }
@@ -93,6 +99,9 @@ ul {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
+.btn-action {
+  border: solid 1px #e5e7eb;
+}
 
 .btn-header:hover,
 .btn-action:hover {
@@ -107,12 +116,12 @@ ul {
 }
 
 .info {
-  margin: 30px 300px 110px 300px;
+  margin: 30px 5vw 110px 5vw;
 }
 
 .quote-section {
   background-color: #e5e7eb;
-  padding: 90px 300px;
+  padding: 90px 10vw;
 }
 
 .quote-text {
@@ -122,7 +131,7 @@ ul {
   color: rgba(31, 41, 55, 0.8);
 }
 
-.quote-autor {
+.quote-author {
   font-weight: 800;
   text-align: right;
 }
@@ -148,7 +157,7 @@ ul {
   background-color: #3882f6;
   color: #e5e7eb;
   border-radius: 8px;
-  margin: 100px 180px;
+  margin: 100px 10vw;
   padding: 30px 90px;
   display: flex;
   align-items: center;
@@ -167,18 +176,6 @@ ul {
   font-weight: bold;
 }
 
-.btn-action {
-  background-color: #3882f6;
-  color: #e5e7eb;
-  padding: 6px 30px;
-  margin-top: 10px;
-  font-size: 18px;
-  border: solid 1px #e5e7eb;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
 .footer {
   height: 80px;
   bottom: 0;
@@ -188,4 +185,36 @@ ul {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 10px 30px;
+    height: auto;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .info {
+    margin: 30px 10px 110px 10px;
+  }
+
+  .pics {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cta-container {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
 }
